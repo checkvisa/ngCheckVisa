@@ -1,0 +1,78 @@
+<div class="app__about">
+	<h3>Who should use this web service?</h3>
+	<p>Any non-United States citizens/green card holders who plan to apply US visa, or have already interviewed at a US embassy and have been notified that the visa needs additional “administrative processing” can use this service.</p>
+
+	<h3>What is “check” of Visa?</h3>
+	<p>“Check” is an unofficial name for administrative processing during the process of US visa application reviewing. In general, an applicant that receives a notification that your visa application requires additional administrative processing is said to be “checked”.</p>
+
+	<h3>Why does my application get checked?</h3>
+	<p>Common reasons for “check” include sensitive academic majors or directions, names, countries of origins, provinces, etc.</p>
+
+	<h3>The visa officer already told me that I should wait three (or four, etc.) weeks, should I still use this web service to predict the waiting time for my case?</h3>
+	<p>Usually the applicant will be notified that they should wait 3 to 4 weeks. But this time is never accurate, and is dependent on a number of factors. By reviewing the information of your specific case, we may provide a more accurate estimation of your waiting time based on machine learning algorithms.</p>
+
+	<h3>What are the most important factors that determine the length of check waiting time?</h3>
+	<p>We found that Visa type (F1, J1, etc.) and academic major are two most important features that influence waiting time. We are working on providing more available features to capture the nuance between different cases.</p>
+
+	<h3>What should I do while waiting for a “checked” visa application?</h3>
+	<p>The only thing that you can do is basically just to wait and enjoy your life. You can try to call Department of States (DOS) +1-202-663-1225, tap 1 and then 0, then talk to an agent asking him/her about the status of your case. Calling this number does not expedite the processing of your case. If you read Chinese, go to the following <a href="http://bbs.tigtag.com/thread-548786-1-1.html">link</a> to get more information.</p>
+
+	<h3>Where else can I get more information about dealing with “check”?</h3>
+	<p>We recommend that you visit the following websites:</p>
+
+	<ul>
+		<li><a href="http://checkee.info">checkee.info</a> - a website that allows self-reporting checking cases and experiences</li>
+
+		<li><a href="http://checkcheck.info/">checkcheck.info</a> - checkvisa alternative</li>
+
+		<li><a href="http://bbs.tigtag.com/thread-548786-1-1.html">link</a> - (Chinese) a very comprehensive collection of information about being “checked”</li>
+
+		<li><a href="http://shenyang.usembassy-china.org.cn/ap-check.html">link</a> - a list of pending/cleared cases compiled by US Shenyang Consular</li>
+	</ul>
+
+
+	<h3>Is the waiting time predictable? Doesn’t the time vary from person to person?</h3>
+	<p>Yes and yes. Our statistical analysis shows that the waiting time is strongly dependent on the visa type, student’s major, country of origin, etc. When you submit your case information that includes such information, we use machine learning models to predict the waiting time specifically for your waiting time. This prediction takes into consideration not only the information you submitted, but also the recent trend of average waiting time.</p>
+
+	<h3>How accurate is your prediction?</h3>
+	<p>Our prediction explains 30% of the variance of visa waiting time. We are working on providing you a time range, so that with 95% chance the waiting time of your “checked” visa will fall into this range.</p>
+
+	<h3>How do you predict the waiting time?</h3>
+	<p>We collect previous cases, and train machine learning models on these cases, and apply such models to new queries to make prediction. The underlying assumption is that people whose cases are similar (in terms of time, location, applicant, etc.) would have similar waiting time.</p>
+
+	<h3>Who are you? Why do you create this website?</h3>
+	<p><del>We are two graduate students interested in machine learning and website programming</del>. One of us has graduated and working as a front end developer in SF bay area, the other is a PHD candidate (who got checked once) interested in machine learning. We created this website to experiment our ideas about statistical modeling and programming, as well as providing a service that would benefit a number of people.</p>
+
+	<h3>Do you have internal source within the US government?</h3>
+	<p>No. All of the information we gather are open on the Internet.</p>
+
+	<h3>What is your data source?</h3>
+	<p>Initially we crawled part of our data from <a href="http://checkee.info">checkee.info</a>, which is a great website that helps peoples who got “checked”. As the website grows, we are starting collecting cases by ourselves through the website.</p>
+
+	<h3>How is this website related to <a href="http://checkee.info">checkee.info</a>?</h3>
+	<p>We are not related to <a href="http://checkee.info">checkee.info</a>, which is another website that provides US visa check information. Part of our data is crawled from <a href="http://checkee.info">checkee.info</a>, and they are used to improve our prediction accuracy. We recommend you to look at <a href="http://checkee.info">checkee.info</a> to read other applicants’ comments and experiences.</p>
+
+	<h3>Do you collect my personal information?</h3>
+	<p>No. All the data collected are anonymous - i.e., we do not collect your names, ID number, phone number and any other private information. For prediction accuracy we do plan to ask users for age (birthday) information, but all such fields are optional during the usage of our service, and the submission of cases is completely voluntarily. We will never attempt to match the case information we collected to any person, and we have make every effort to protect our data not be attacked by anyone who is evil.</p>
+
+	<h3>How can I use this prediction result?</h3>
+	<p>The prediction is a reference. You can refer to the prediction result to book a flight at a relatively “safe” time, but you should NOT rely on the prediction result in any situation, as it is not perfectly accurate and it will never be.</p>
+
+	<h3>Is the prediction algorithm open source?</h3>
+	<p>Everything is on GitHub. We plan to make it open source to benefit people interested in machine learning.</p>
+
+	<h3>Can I help improve the machine learning algorithm?</h3>
+	<p>Sure! We are glad to accept any contribution in the form of intelligence. Please <a href="mailto:checkoo2013@gmail.com" target="_top">email us</a>.</p>
+
+	<h3>The city where I applied visa is not in the list, what shall I do?</h3>
+	<p>Please <a href="mailto:checkoo2013@gmail.com" target="_top">email us</a>.</p>
+
+	<h3>I am applying for an F1 visa, but my major is not listed in the list, what shall I do?</h3>
+	<p>Please <a href="mailto:checkoo2013@gmail.com" target="_top">email us</a>.</p>
+
+	<h3>How can I contribute to the website?</h3>
+	<p>We welcome contribution in the forms of both intelligence and money. If you would like to help us, please <a href="mailto:checkoo2013@gmail.com" target="_top">email us</a>.</p>
+
+	<h3>Is this website for profit?</h3>
+	<p>No. We do it for fun. But we reserve the right to put ads on pages <del>in the future</del>, because we pay for our server and domain name.</p>
+</div>

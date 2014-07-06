@@ -1,0 +1,55 @@
+<div class="row app__main">
+	<div class="col-md-8">
+		<div class="container_left">
+			<div class="row">
+				<div class="col-sm-7">
+					<h3 class="container_left__title">Welcome to CheckVisa.</h3>
+					<h4><small>Predict the waiting time of your US visa administrative processing.</small></h4>
+					<ul class="check-list">
+						<li>Input your visa information to get the prediction for your waiting time.<sup>*</sup></li>
+						<li>After clearance, <a ui-sref="report">report</a> your actual waiting time to help others.</li>
+						<li><a href="mailto:checkoo2013@gmail.com">Help us improve</a> on statistical machine learning.</li>
+						<li><a ui-sref="about">Read more...</a></li>
+					</ul>
+					<button type="submit" class="btn btn_report">Report Case</button>
+				</div>
+				<div class="col-sm-5">
+					<img class="app__us" src="images/Uncle_Sam.png"/>
+				</div>
+			</div>
+		</div>
+		<div class="note">
+			<small><sup>*</sup>Predictions are made by searching our database for similar cases. No private information, such as name, address, or passport number, is collected.</small>
+		</div>
+
+	</div>
+	<div class="col-md-4">
+		<div class="container_right">
+			<h4 class="container_right__title">Predict your waiting time</h4>
+			<form role="form" name="predictForm" ng-submit="predict()" novalidate>
+				<div class="form-group">
+					<label for="input-checkdate">Check Date</label>
+					<input type="text" class="form-control" id="input-checkdate" datepicker-popup="MM/dd/yyyy" ng-model="case.checkDate" is-open="case.checkDate.open" ng-click = "case.checkDate.open = true" show-weeks="false" ng-required="true" show-button-bar="false" />
+				</div>
+				<div class="form-group">
+					<label for="input-visatype">Visa Type</label>
+					<select class="form-control" id="input-visatype" ng-model="case.visaType" ng-options="visaType for visaType in visaTypes"></select>
+				</div>
+				<div class="form-group">
+					<label for="input-visaentry">Visa Entry</label>
+					<select class="form-control" id="input-visaentry" ng-model="case.visaEntry" ng-options="visaEntry for visaEntry in visaEntries"></select>
+				</div>
+				<div class="form-group">
+					<label for="input-location">Location</label>
+					<select class="form-control" id="input-location" ng-model="case.location" ng-options="location for location in locations"></select>
+				</div>
+
+				<div class="form-group" ng-if="case.visaType === 'F1'">
+					<label for="input-major">Major</label>
+					<select class="form-control" id="input-major" ng-model="case.major" ng-options="major for major in majors"></select>
+				</div>
+				<button type="submit" class="btn btn_predict btn-block">Predict</button>
+			</form>
+		</div>
+	</div>
+</div>
